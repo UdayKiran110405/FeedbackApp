@@ -1,0 +1,117 @@
+/* === General Styles === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* === Floating Tubelight Navbar === */
+.tubelight-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 15px 0;
+    position: relative;
+    top: 40px; /* This makes it hover below the top */
+    border-radius: 12px;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add a subtle hover lift effect */
+.tubelight-navbar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+.tubelight-navbar h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #005fa3;
+}
+
+/* === Main Container === */
+.container {
+    max-width: 600px;
+    margin: 120px auto 50px auto; /* Added top margin for spacing from navbar */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+/* === Form Styling === */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea, button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* === Table Styling (Admin Page) === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0078d7;
+    color: white;
+}
